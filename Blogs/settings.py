@@ -1,3 +1,4 @@
+# _*_ coding: utf-8 _*_
 """
 Django settings for Blogs project.
 
@@ -9,7 +10,6 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -136,6 +136,7 @@ STATIC_URL = '/static/'
 # 如果不想用 STATICFILES_DIRS 可以不用，都放在 app 里的 static 中也可以
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, os.path.join('templates', 'static')),
+    os.path.join(BASE_DIR, os.path.join('templates', os.path.join('baseApp', 'static'))),
     # '/path/to/others/static/',  # 用不到的时候可以不写这一行
 )
 
