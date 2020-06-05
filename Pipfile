@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = {index = "https://pypi.doubanio.com/simple/",version = "==1.10.6"}
+django = {index = "https://pypi.doubanio.com/simple/",version = "==1.11.29"}
 django-haystack = {index = "https://pypi.doubanio.com/simple/",version = "==2.6.1"}
 gunicorn = {index = "https://pypi.doubanio.com/simple/",version = "*"}
 
